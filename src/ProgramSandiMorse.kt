@@ -11,55 +11,16 @@ fun main(args: Array<String>) {
     val morseChars = arrayOf(".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-",
         ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "-..")
     // splitting the string into Morse characters
-    val
-            characters = s.split("")
+    val characters = s.split("")
                     //iterating over Morse characters
-            for
-                    (morseChar
-            in
-            characters)
+            for (morseChar in characters)
             {
-                val
-                        index
-                        =
-                    morseChars.indexOf(morseChar)
-
-
-
-
-
-
+                val index = morseChars.indexOf(morseChar)
 // character was found
-
-
-
-
-
-
-                if
-                        (index != -1)
+                if (index != -1)
                 {
-
-
-
-
-
-
-
-
                     message+= alphabetChars[index]
-
-
-
-
-
-
                 }
-
-
             }
-
-
                     println("The decoded message:$message")
-
 }
